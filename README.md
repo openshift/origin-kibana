@@ -9,7 +9,7 @@ Currently compatible with the 4.1.x code stream of Kibana
 
 ### Hacking the code
 * You'll need a local fork of [kibana](https://github.com/elastic/kibana)
-* Create a soft link pointing to the root of this repo: `ln -fs . ../kibana/src/kibana/plugins/openshift-kibana`
+* Create a soft link pointing to the <root>/lib of this repo: `ln -fs . ../kibana/src/kibana/plugins/openshift-kibana`
 * Add a reference to openshift-kibana's less file to kibana's Gruntfile.js:
 
 ```
