@@ -1,0 +1,24 @@
+{
+  "name": "openshift-kibana",
+  "version": "0.0.1",
+  "homepage": "https://github.com/openshift/openshift-kibana",
+  "authors": [
+    "dev@openshift.redhat.com"
+  ],
+  "description": "Openshift theme plugin for Kibana",
+  "keywords": [
+    "openshift",
+    "kibana"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "patternfly": "~2.2.0"
+  }
+}
