@@ -1,1 +1,3 @@
-lib/components/
+lib/styles/*.css
+bower_components
+node_modules

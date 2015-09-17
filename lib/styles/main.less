@@ -1,12 +1,26 @@
-@import "../components/patternfly/less/patternfly.less";
-/*
+@pf-path: "../../bower_components/patternfly/less";
+@pf-components-path: "../../bower_components/patternfly";
+
+/* Bootstrap 3 */
+@import "@{pf-components-path}/components/bootstrap/less/bootstrap.less";
+
+/* Font Awesome */
+@import "@{pf-components-path}/components/font-awesome/less/font-awesome.less";
+
+/* PatternFly */
+@import "@{pf-path}/patternfly.less";
+
+/* Overrides */
+@import "variables.less";
+
+
 .navbar-inverse .logo {
     background-image: url('');
     background-size: contain;
     height: 45px;
     width: 300px;
 }
-*/
+
 .navbar-inverse .navbar-nav > .active > a:before,
 .navbar-default .navbar-nav > .active > a:before {
   display: none;
@@ -125,7 +139,7 @@
 .container-brand {
   margin-top: 3px;
   height: 11px;
-  background-image: url(../images/logo-origin-thin.svg);
+  background-image: url("@{img-path}/logo-origin-thin.svg");
   background-size: 111px 11px;
   background-repeat: no-repeat;
   

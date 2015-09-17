@@ -1,0 +1,41 @@
+{
+  "name": "origin-kibana",
+  "version": "0.0.1",
+  "homepage": "https://github.com/openshift/origin-kibana",
+  "authors": [
+    "dev@openshift.redhat.com"
+  ],
+  "description": "OpenShift Origin plugin for Kibana",
+  "keywords": [
+    "openshift",
+    "kibana"
+  ],
+  "license": "Apache 2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "grunt": "^0.4.5",
+    "grunt-cli": "0.1.13",
+    "grunt-contrib-less": "^0.10.0"
+  },
+  "main": "Gruntfile.js",
+  "scripts": {
+    "postinstall": "bower install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openshift/origin-kibana.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/openshift/origin-kibana/issues"
+  }
+}
