@@ -19,7 +19,7 @@ When linking to kibana with the origin-kibana plugin you can control the contain
 
 * `console_container_name` - Used to set the container name text in the header
 * `console_back_url` - Used as the URL in the back link to get back to the main console
-* `console_auth_token` - Used as the URL in the back link to get back to the main console
+* `console_auth_token` - Contains the authorization token for the user logged into the main console
 
 Any parameter in the document hash prefixed with `console_` will be removed from the document hash once the UI is loaded.
 
