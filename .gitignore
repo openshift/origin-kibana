@@ -1,3 +1,4 @@
 #lib/styles/*.css
+dist/
 bower_components/patternfly
 node_modules

@@ -20,10 +20,25 @@ module.exports = function (grunt) {
           sourceMap: false
         }
       }
-    }
+    },
+    copy: {
+      options: {
+        timestamp: true
+      },
+      dist: {
+        expand: true,
+        cwd: 'lib/',
+        src: ['**/*', '!**/*.js','!**/*.less'],
+        dest: 'dist/',
+        filter: 'isFile'
+      }
+    },
+    clean: ['dist']
     
   });
 
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.registerTask('default', 'less');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.registerTask('default', ['less','copy']);
 };
