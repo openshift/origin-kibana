@@ -9,6 +9,7 @@
 
 /* PatternFly */
 @import "@{pf-path}/patternfly.less";
+@import "@{pf-path}/icons.less";
 
 /* Overrides */
 @import "variables.less";
@@ -171,3 +172,19 @@
   margin-top: 0 !important;
 }
 
+.logout {
+
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  
+  a {
+    font-weight: normal;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: rgb(241, 241, 241);
+
+    :hover :link :active :visited{
+      color: inherit
+    }
+  }
+}

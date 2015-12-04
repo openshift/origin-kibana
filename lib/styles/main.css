@@ -9746,6 +9746,140 @@ h2,
     margin-right: 20px;
   }
 }
+@font-face {
+  font-family: 'PatternFlyIcons-webfont';
+  src: url('../styles/fonts/PatternFlyIcons-webfont.eot');
+  src: url('../styles/fonts/PatternFlyIcons-webfont.eot?#iefix') format('embedded-opentype'), url('../styles/fonts/PatternFlyIcons-webfont.ttf') format('truetype'), url('../styles/fonts/PatternFlyIcons-webfont.woff') format('woff'), url('../styles/fonts/PatternFlyIcons-webfont.svg#PatternFlyIcons-webfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="pficon-"],
+[class*=" pficon-"] {
+  display: inline-block;
+  font-family: 'PatternFlyIcons-webfont';
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.pficon-screen:before {
+  content: "\e600";
+}
+.pficon-save:before {
+  content: "\e601";
+}
+.pficon-ok:before {
+  color: #3f9c35;
+  content: "\e602";
+}
+.pficon-messages:before,
+.pficon-flag:before {
+  content: "\e603";
+}
+.pficon-info:before {
+  content: "\e604";
+}
+.pficon-help:before {
+  content: "\e605";
+}
+.pficon-folder-open:before {
+  content: "\e606";
+}
+.pficon-folder-close:before {
+  content: "\e607";
+}
+.pficon-topology:before {
+  content: "\e608";
+}
+.pficon-thumb-tack-o:before {
+  content: "\e609";
+}
+.pficon-edit:before {
+  content: "\e60a";
+}
+.pficon-close:before {
+  content: "\e60b";
+}
+.pficon-user:before {
+  content: "\e60e";
+}
+.pficon-users:before {
+  content: "\e60f";
+}
+.pficon-add-circle-o:before {
+  content: "\e61b";
+}
+.pficon-warning-triangle-o:before {
+  color: #ec7a08;
+  content: "\e61c";
+}
+.pficon-error-circle-o:before {
+  color: #cc0000;
+  content: "\e61d";
+}
+.pficon-service:before {
+  content: "\e61e";
+}
+.pficon-image:before {
+  content: "\e61f";
+}
+.pficon-settings:before {
+  content: "\e610";
+}
+.pficon-delete:before {
+  content: "\e611";
+}
+.pficon-print:before {
+  content: "\e612";
+}
+.pficon-refresh:before,
+.pficon-restart:before {
+  content: "\e613";
+}
+.pficon-running:before {
+  content: "\e614";
+}
+.pficon-import:before {
+  content: "\e615";
+}
+.pficon-export:before {
+  content: "\e616";
+}
+.pficon-history:before {
+  content: "\e617";
+}
+.pficon-home:before {
+  content: "\e618";
+}
+.pficon-cluster:before {
+  content: "\e620";
+}
+.pficon-container-node:before {
+  content: "\e621";
+}
+.pficon-project:before {
+  content: "\e622";
+}
+.pficon-registry:before {
+  content: "\e623";
+}
+.pficon-replicator:before {
+  content: "\e624";
+}
+.pficon-route:before {
+  content: "\e625";
+}
+.pficon-openshift:before {
+  content: "\e626";
+}
+.pficon-kubernetes:before {
+  content: "\e627";
+}
 /* Overrides */
 .navbar-inverse .logo {
   background-image: url('');
@@ -9892,4 +10026,17 @@ h2,
 }
 .kbn-settings-about {
   margin-top: 0 !important;
+}
+.logout {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+.logout a {
+  font-weight: normal;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #f1f1f1;
+}
+.logout a :hover :link :active :visited {
+  color: inherit;
 }
