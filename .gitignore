@@ -1,4 +1,6 @@
-#lib/styles/*.css
+lib/styles/*.css
 dist/
-bower_components/patternfly
+bower_components
 node_modules
+*.tgz
+*.swp
