@@ -46,6 +46,13 @@ module.exports = function (grunt) {
             cwd: 'bower_components/patternfly/components/font-awesome/fonts',
             src: '**',
             dest: 'dist/styles/fa-fonts/'
+          },
+          {
+            expand: false,
+            flatten: false,
+            cwd: '.',
+            src: 'package.json',
+            dest: 'dist/'
           }
         ]
       }
