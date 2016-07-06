@@ -4,6 +4,7 @@ add OpenShift specific requirements.  The main features added
 by this plugin are:
 
 * Origin skinning
+* Passing OpenShift Oauth token per request.
 
 Currently compatible with the 4.1.x code stream of Kibana
 
