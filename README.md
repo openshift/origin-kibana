@@ -26,4 +26,10 @@ Any parameter in the document hash prefixed with `console_` will be removed from
 
 To test it out you can access the kibana console with a URL like:
 
+```
 http://localhost:5601/#/dashboard#console_container_name=cookies&console_back_url=http:%2F%2Flocalhost:8443&console_auth_token=wheetoken
+```
+
+Which will modify the UI to:
+
+![Kibana OpenShift UI Mod](console.png)
