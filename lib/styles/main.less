@@ -1,22 +1,14 @@
-@pf-path: "../../bower_components/patternfly/less";
-@pf-components-path: "../../bower_components/patternfly";
-
-/* Bootstrap 3 */
-@import "@{pf-components-path}/components/bootstrap/less/bootstrap.less";
-
-/* Font Awesome */
-@import "@{pf-components-path}/components/font-awesome/less/font-awesome.less";
+@pf-path: "../../bower_components/patternfly";
 
 /* PatternFly */
-@import "@{pf-path}/patternfly.less";
-@import "@{pf-path}/icons.less";
+@import "@{pf-path}/less/patternfly.less";
+@import "@{pf-path}/less/icons.less";
 
 /* Overrides */
 @import "variables.less";
 
-
 .navbar-inverse .logo {
-    background-image: url('');
+    background-image: none;
     background-size: contain;
     height: 45px;
     width: 300px;

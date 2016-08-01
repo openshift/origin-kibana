@@ -30,7 +30,7 @@ module.exports = function (grunt) {
             expand: true,
             cwd: 'lib/',
             src: ['**/*', '!**/*.less','!**/fonts/**','!**/fa-fonts/**'],
-            dest: 'dist/',
+            dest: 'dist/public',
             filter: 'isFile'
           },
           {
@@ -38,20 +38,34 @@ module.exports = function (grunt) {
             flatten: true,
             cwd: 'bower_components/patternfly/dist/fonts',
             src: '**',
-            dest: 'dist/styles/fonts/'
+            dest: 'dist/public/fonts/'
           },
           {
             expand: true,
             flatten: true,
             cwd: 'bower_components/patternfly/components/font-awesome/fonts',
             src: '**',
-            dest: 'dist/styles/fa-fonts/'
+            dest: 'dist/public/fonts/'
+          },
+          {
+            expand: true,
+            flatten: true,
+            cwd: 'bower_components/patternfly/components/bootstrap/dist/fonts',
+            src: '**',
+            dest: 'dist/public/fonts/'
           },
           {
             expand: false,
             flatten: false,
             cwd: '.',
             src: 'package.json',
+            dest: 'dist/'
+          },
+          {
+            expand: false,
+            flatten: false,
+            cwd: '.',
+            src: 'index.js',
             dest: 'dist/'
           }
         ]
