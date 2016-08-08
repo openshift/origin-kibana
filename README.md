@@ -4,16 +4,15 @@ add OpenShift specific requirements.  The main features added
 by this plugin are:
 
 * Origin skinning
-* Passing OpenShift Oauth token per request.
 
-Currently compatible with the 4.1.x code stream of Kibana
+Currently compatible with the 4.5.x code stream of Kibana
 
 ### Hacking the code
+* Run `npm install` to install node dependencies
 * Run `bower install` to install patternfly locally
 * Run `grunt` to build main.css
-* You'll need a local fork of [kibana](https://github.com/elastic/kibana)
-* Create a soft link pointing to the <root>/lib of this repo: `ln -fs . ../kibana/src/kibana/plugins/origin-kibana`
-* Run kibana in dev mode via `grunt dev --with-es`, the UI should have an extra header above the regular kibana navigation bar.
+* Copy the contents of the `dist` directory to `<KIBANA_4.5_HOME>/installedPlugins/origin-kibana`
+* Start Kibana
 
 ### Current supported fragment parameters
 When linking to kibana with the origin-kibana plugin you can control the container name and link back to the main console by setting the following parameters in the document hash:
