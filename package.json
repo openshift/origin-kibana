@@ -1,6 +1,6 @@
 {
   "name": "origin-kibana",
-  "version": "0.6.2",
+  "version": "4.5.1-0",
   "homepage": "https://github.com/openshift/origin-kibana",
   "authors": [
     "dev@openshift.redhat.com"
@@ -10,7 +10,7 @@
     "openshift",
     "kibana"
   ],
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -18,7 +18,10 @@
     "test",
     "tests"
   ],
-  "dependencies": {},
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "bower install"
+  },
   "devDependencies": {
     "bower": "^1.4.1",
     "grunt": "~0.4.5",
@@ -26,13 +29,8 @@
     "grunt-contrib-less": "~1.1.0",
     "grunt-contrib-copy": "~0.8.2",
     "grunt-contrib-clean": "~0.7.0",
-    "grunt-contrib-compress": "~0.14.0",
+    "grunt-contrib-compress": "1.3.0",
     "grunt-github-releaser": "~0.1.18"
-  },
-  "main": "Gruntfile.js",
-  "scripts": {
-    "postinstall": "bower install",
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
