@@ -72,6 +72,7 @@ module.exports = function (grunt) {
       }
     },
     clean: ['dist', releaseBase + '*'],
+    touch: ['dist/public/styles/overrides.css'],
     compress: {
       options: {
         pretty: true,
@@ -110,7 +111,8 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-compress');
   grunt.loadNpmTasks('grunt-github-releaser');
+  grunt.loadNpmTasks('grunt-touch');
 
-  grunt.registerTask('default', ['clean','less','copy']);
+  grunt.registerTask('default', ['clean','less','copy', 'touch']);
   grunt.registerTask('release', ['default', 'compress','github-release']);
 };

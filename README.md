@@ -5,6 +5,23 @@ by this plugin are:
 
 * Origin skinning
 
+###
+Overriding Styles
+The plugin adds an empty stylesheet `$PLUGIN/public/styles/overrides.css' as a hook
+for users to modify the styles.  After deployment, you might wish to modify the header
+style to include a custer header logo:
+
+```
+.container-brand {
+  margin-top: 3px;
+  height: 11px;
+  background-image: url("../images/my-custom-image.svg");
+  background-size: 111px 11px;
+  background-repeat: no-repeat;
+}
+```
+This stylesheet is loaded after the main stylesheet provided by the plugin.
+
 Currently compatible with the 4.5.x code stream of Kibana
 
 ### Hacking the code

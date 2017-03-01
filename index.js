@@ -3,6 +3,7 @@ export default function (kibana) {
     uiExports: {
       visTypes: [
         'plugins/origin-kibana/styles/main.css',
+        'plugins/origin-kibana/styles/overrides.css',
         'plugins/origin-kibana/directives',
         'plugins/origin-kibana/headerController',
         'plugins/origin-kibana/userstore',
