@@ -9,7 +9,7 @@ by this plugin are:
 Overriding Styles
 The plugin adds an empty stylesheet `$PLUGIN/public/styles/overrides.css' as a hook
 for users to modify the styles.  After deployment, you might wish to modify the header
-style to include a custer header logo:
+style to include a custom header logo:
 
 ```
 .container-brand {
@@ -22,21 +22,24 @@ style to include a custer header logo:
 ```
 This stylesheet is loaded after the main stylesheet provided by the plugin.
 
-Currently compatible with the 4.5.x code stream of Kibana
+Currently compatible with the **5.5.x** code stream of Kibana
 
 ### Hacking the code
+* Download and install [Elasticsearch](https://www.elastic.co/downloads/elasticsearch)
+* Clone the Openshift `origin-kibana` repo
 * Run `npm install` to install node dependencies
 * Run `bower install` to install patternfly locally
 * Run `grunt` to build main.css
-* Copy the contents of the `dist` directory to `<KIBANA_4.5_HOME>/installedPlugins/origin-kibana`
-* Start Kibana
+* Start Kibana to use this plugin `npm start`
 
 ### Current supported fragment parameters
 When linking to kibana with the origin-kibana plugin you can control the container name and link back to the main console by setting the following parameters in the document hash:
 
-* `console_container_name` - Used to set the container name text in the header
-* `console_back_url` - Used as the URL in the back link to get back to the main console
-* `console_auth_token` - Contains the authorization token for the user logged into the main console
+| parameter | Description|
+| ------ | ------|
+| `console_container_name` |  Used to set the container name text in the header |
+| `console_back_url` | Used as the URL in the back link to get back to the main console |
+| `console_auth_token` | Contains the authorization token for the user logged into the main console |
 
 Any parameter in the document hash prefixed with `console_` will be removed from the document hash once the UI is loaded.
 
