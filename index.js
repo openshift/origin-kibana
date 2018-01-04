@@ -1,7 +1,8 @@
 export default function (kibana) {
   return new kibana.Plugin({
+    name: 'origin-kibana',
     uiExports: {
-      visTypes: [
+      hacks: [
         'plugins/origin-kibana/styles/main.css',
         'plugins/origin-kibana/styles/overrides.css',
         'plugins/origin-kibana/directives',

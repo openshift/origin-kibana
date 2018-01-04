@@ -1,6 +1,6 @@
 {
   "name": "origin-kibana",
-  "version": "4.5.1-2",
+  "version": "5.5.2-1",
   "homepage": "https://github.com/openshift/origin-kibana",
   "authors": [
     "dev@openshift.redhat.com"
@@ -20,7 +20,13 @@
   ],
   "main": "index.js",
   "scripts": {
-    "postinstall": "bower install"
+    "lint": "eslint",
+    "start": "plugin-helpers start",
+    "test:server": "plugin-helpers test:server",
+    "test:browser": "plugin-helpers test:browser",
+    "build": "plugin-helpers build",
+    "postinstall": "plugin-helpers postinstall",
+    "postinstall-orig": "bower install"
   },
   "devDependencies": {
     "bower": "^1.4.1",
@@ -31,7 +37,13 @@
     "grunt-contrib-copy": "~0.8.2",
     "grunt-contrib-less": "~1.1.0",
     "grunt-github-releaser": "~0.1.18",
-    "grunt-touch": "^1.0.0"
+    "grunt-touch": "^1.0.0",
+    "@elastic/eslint-config-kibana": "0.0.2",
+    "@elastic/plugin-helpers": "^6.0.0",
+    "babel-eslint": "4.1.8",
+    "chai": "^3.5.0",
+    "eslint": "1.10.3",
+    "eslint-plugin-mocha": "1.1.0"
   },
   "repository": {
     "type": "git",

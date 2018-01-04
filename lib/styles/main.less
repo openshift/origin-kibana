@@ -7,11 +7,11 @@
 /* Overrides */
 @import "variables.less";
 
-.navbar-inverse .logo {
+.global-nav .logo.kibana {
     background-image: none;
     background-size: contain;
-    height: 45px;
-    width: 300px;
+    height: 0;
+    width: 0;
 }
 
 .navbar-inverse .navbar-nav > .active > a:before,
@@ -121,12 +121,26 @@
   height: 7px;
 }
 
+.global-nav {
+  top: 25px;
+  background: #030303;
+}
+
+.global-nav.global-nav__logo {
+    display: none
+}
+
+.app-wrapper {
+  top: 25px
+}
+
 .container-header {
   border-top: 3px solid red;
   background: #030303;
   color: #f1f1f1;
   padding-left: 17px;
   padding-bottom: 8px;
+  z-index: 10;
 }
 
 .container-brand {

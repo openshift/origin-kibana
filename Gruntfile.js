@@ -1,11 +1,12 @@
 module.exports = function (grunt) {
-  
+
   var releaseBase = 'origin-kibana-';
   var releaseTag = 'v' + grunt.file.readJSON('package.json').version;
-  var releaseFile = releaseBase + releaseTag  + ".tgz";
-    
+  var releaseFile = releaseBase + releaseTag  + ".zip";
+  var distDir = 'dist/kibana/origin-kibana';
+
   grunt.initConfig({
-    
+
     pkg: grunt.file.readJSON('package.json'),
     less: {
       production: {
@@ -30,7 +31,7 @@ module.exports = function (grunt) {
             expand: true,
             cwd: 'lib/',
             src: ['**/*', '!**/*.less','!**/fonts/**','!**/fa-fonts/**'],
-            dest: 'dist/public',
+            dest: distDir + '/public',
             filter: 'isFile'
           },
           {
@@ -38,46 +39,46 @@ module.exports = function (grunt) {
             flatten: true,
             cwd: 'bower_components/patternfly/dist/fonts',
             src: '**',
-            dest: 'dist/public/fonts/'
+            dest: distDir + '/public/fonts/'
           },
           {
             expand: true,
             flatten: true,
             cwd: 'bower_components/patternfly/components/font-awesome/fonts',
             src: '**',
-            dest: 'dist/public/fonts/'
+            dest: distDir + '/public/fonts/'
           },
           {
             expand: true,
             flatten: true,
             cwd: 'bower_components/patternfly/components/bootstrap/dist/fonts',
             src: '**',
-            dest: 'dist/public/fonts/'
+            dest: distDir + '/public/fonts/'
           },
           {
             expand: false,
             flatten: false,
             cwd: '.',
             src: 'package.json',
-            dest: 'dist/'
+            dest: distDir + '/'
           },
           {
             expand: false,
             flatten: false,
             cwd: '.',
             src: 'index.js',
-            dest: 'dist/'
+            dest: distDir + '/'
           }
         ]
       }
     },
     clean: ['dist', releaseBase + '*'],
-    touch: ['dist/public/styles/overrides.css'],
+    touch: [distDir + '/public/styles/overrides.css'],
     compress: {
       options: {
         pretty: true,
         archive: releaseFile,
-        mode: 'tgz'
+        mode: 'zip'
       },
       files: {
         expand: true,
