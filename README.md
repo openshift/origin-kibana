@@ -22,7 +22,7 @@ style to include a custom header logo:
 ```
 This stylesheet is loaded after the main stylesheet provided by the plugin.
 
-Currently compatible with the **5.5.x** code stream of Kibana
+Currently compatible with the **5.6.x** code stream of Kibana
 
 ### Hacking the code
 * Download and install [Elasticsearch](https://www.elastic.co/downloads/elasticsearch)
