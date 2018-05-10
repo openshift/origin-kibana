@@ -1,6 +1,6 @@
 {
   "name": "origin-kibana",
-  "version": "5.6.8-1",
+  "version": "5.6.9-1",
   "homepage": "https://github.com/openshift/origin-kibana",
   "authors": [
     "dev@openshift.redhat.com"
