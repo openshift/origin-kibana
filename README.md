@@ -1,5 +1,5 @@
 # origin-kibana
-This repo provide a plugin to the Kibana Visualization tool to 
+This repo provide a plugin to the Kibana Visualization tool to
 add OpenShift specific requirements.  The main features added
 by this plugin are:
 
@@ -37,7 +37,6 @@ When linking to kibana with the origin-kibana plugin you can control the contain
 
 | parameter | Description|
 | ------ | ------|
-| `console_container_name` |  Used to set the container name text in the header |
 | `console_back_url` | Used as the URL in the back link to get back to the main console |
 | `console_auth_token` | Contains the authorization token for the user logged into the main console |
 
@@ -46,7 +45,7 @@ Any parameter in the document hash prefixed with `console_` will be removed from
 To test it out you can access the kibana console with a URL like:
 
 ```
-http://localhost:5601/#/dashboard#console_container_name=cookies&console_back_url=http:%2F%2Flocalhost:8443&console_auth_token=wheetoken
+http://localhost:5601/#/dashboard#console_back_url=http:%2F%2Flocalhost:8443&console_auth_token=wheetoken
 ```
 
 Which will modify the UI to:
