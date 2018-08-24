@@ -4,6 +4,7 @@
     <span class="pficon pficon-user"></span>
     <a href="{{logoutUrl}}">Log out</a>
   </div>
-  <h4 ng-if='containerName'>Logs for <span ng-bind="containerName"></span></h4>
-  <a ng-if="goBack" ng-href="{{goBack}}"><i class="fa fa-arrow-left"></i> Back</a>
+  <div class="back-link">
+    <a ng-if="goBack" ng-href="{{goBack}}"><i class="fa fa-arrow-left"></i> Back</a>
+  </div>
 </div>

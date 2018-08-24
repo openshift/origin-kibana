@@ -7,6 +7,11 @@
 /* Overrides */
 @import "variables.less";
 
+.global-nav {
+  position: static;
+  top: 48px
+}
+
 .global-nav .logo.kibana {
     background-image: none;
     background-size: contain;
@@ -131,25 +136,23 @@
 }
 
 .app-wrapper {
-  top: 25px
+  top: 60px
 }
 
 .container-header {
-  border-top: 3px solid red;
   background: #030303;
   color: #f1f1f1;
   padding-left: 17px;
   padding-bottom: 8px;
-  z-index: 10;
 }
 
 .container-brand {
   margin-top: 3px;
-  height: 11px;
-  background-image: url("@{img-path}/logo-origin-thin.svg");
-  background-size: 111px 11px;
+  height: 25px;
+  background-image: url("@{img-path}/logo-okd.svg");
   background-repeat: no-repeat;
-  
+  background-position-y: 5px;
+  padding-bottom: 35px;
 }
 
 .container-header h4 {
@@ -157,11 +160,14 @@
   margin-bottom: 3px;
 }
 
+.container-header .back-link {
+  height: 22px;
+}
 .container-header a {
   color: #0099d3;
   text-decoration: none;
   font-weight: bold;
-  margin-bottom: 4px;
+  margin-bottom: 7px;
 }
 
 .container-header a:hover,
@@ -183,7 +189,7 @@
   position: absolute;
   top: 5px;
   right: 10px;
-  
+
   a {
     font-weight: normal;
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
