@@ -7,8 +7,6 @@ export default function (kibana) {
         'plugins/origin-kibana/styles/overrides.css',
         'plugins/origin-kibana/directives',
         'plugins/origin-kibana/headerController',
-        'plugins/origin-kibana/userstore',
-        'plugins/origin-kibana/logger'
       ],
     },
 
